@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  font-family: sans-serif;
+  box-sizing: border-box;
+  font-size: 0.85vw;
+  letter-spacing: 0.025em;
+}
+
+div#home {
+  height: 100vh;
+  width: 100vw;
+}
+
+div#top-bar {
+  height: 3vw;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4d8286;
+}
+
+#top-bar div#page-title {
+  display: block;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#page-title > span.material-symbols-outlined {
+  color: #fff;
+  font-size: 1.35vw;
+  margin-right: 0.5vw;
+  font-weight: 900;
+}
+
+#home #top-bar #page-title span.text {
+  font-size: 1.15vw;
+  letter-spacing: 0.035em;
+  font-weight: 900;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+/* Inspected styles */
+
+#home > #action-root > div#form-container {
+  width: 30vw;
+  background-color: #ffffff;
+  border: 1px solid #eeeeee;
+  border-radius: 0.5vw;
+  padding: 0.5vw;
+  box-shadow: 0 0 8px #dfdfdf;
+}
+
+#home > div#action-root {
+  height: calc(100% - 3vw);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #efefef;
+}
+
+#home > #action-root > div#form-container > div#form-title {
+  height: 3vw;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #444444;
+  font-size: 0.85vw;
+  letter-spacing: 0.035em;
+  color: #444444;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#home > #action-root > div#form-container div#form-content {
+  width: 100%;
+  margin: 0.5vw 0;
+}
+
+#home
+  > #action-root
+  > div#form-container
+  div#form-content
+  > #imageForm
+  > #file-input-group {
+  width: 100%;
+  margin: 0.5vw 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f1f1;
+  border: 1px solid #dfdfdf;
+  border-radius: 0.35vw;
+  box-shadow: 0 0 4px #e8e8e8 inset;
+  position: relative;
+}
+
+#home
+  > #action-root
+  > div#form-container
+  div#form-content
+  > #imageForm
+  > #file-input-group
+  > #imagePreview {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: none;
+  border: 0;
+  outline: none;
+  display: none;
+}
+
+#home
+  > #action-root
+  > div#form-container
+  div#form-content
+  > #imageForm
+  > #file-input-group
+  > input#imageInput {
+  width: 100%;
+}
+
+#home > #action-root > div#form-container div#form-content > form#imageForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Inspected styles  1 */
+
+#home
+  > #action-root
+  > div#form-container
+  div#form-content
+  > #imageForm
+  > #file-input-group
+  > label#image-label {
+  height: 14vw;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3e696c;
+  font-size: 0.75vw;
+  text-transform: capitalize;
+  letter-spacing: 0.035em;
+  cursor: pointer;
+}
+
+#home
+  > #action-root
+  > div#form-container
+  div#form-content
+  > #imageForm
+  > #file-input-group
+  > #image-label
+  > input#imageInput {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  visibility: hidden;
+}
+
+#image-label > span.material-symbols-outlined {
+  font-size: 1.25vw;
+  color: #a4c8ca;
+  margin-right: 0.25vw;
+}
+
+#home
+  > #action-root
+  > div#form-container
+  div#form-content
+  > #imageForm
+  > #submitBtn {
+  height: 2.25vw;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #a4c8ca;
+  border: 0;
+  border-radius: 0.5vw;
+  margin: 0.5vw 0;
+  font-size: 0.85vw;
+  letter-spacing: 0.035em;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+}
+
+#home
+  > #action-root
+  > div#form-container
+  div#form-content
+  > #imageForm
+  > #submitBtn1 {
+  height: 2.25vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #a4c8ca;
+  border: 0;
+  border-radius: 0.5vw;
+  margin: 0.5vw 0;
+  font-size: 0.85vw;
+  letter-spacing: 0.035em;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+}

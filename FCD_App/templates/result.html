@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+            font-family: sans-serif;
+            box-sizing: border-box;
+            font-size: 0.85vw;
+            letter-spacing: 0.025em;
+        }
+
+        div#home {
+            height: 100vh;
+            width: 100vw;
+        }
+
+
+        div#top-bar {
+            height: 4vw;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #191d67;
+        }
+
+        #top-bar div#page-title {
+            display: block;
+            width: fit-content;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #page-title>span.material-symbols-outlined {
+            color: #fff;
+            font-size: 1.35vw;
+            margin-right: 0.5vw;
+            font-weight: 900;
+        }
+
+        #home #top-bar #page-title span.text {
+            font-size: 1.25vw;
+            letter-spacing: 0.035em;
+            font-weight: 900;
+            color: #fff;
+            text-transform: capitalize;
+        }
+
+        /* page content style */
+
+        #home>div#result-root {
+            height: calc(100% - 3vw);
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #efefef;
+        }
+
+        #home>#result-root>div#result-container {
+            width: 50vw;
+            background-color: #ffffff;
+            border: 1px solid #eeeeee;
+            border-radius: 0.5vw;
+            padding: 0.5vw;
+            box-shadow: 0 0 8px #dfdfdf;
+        }
+
+        #home>#result-root>div#result-container>div#result-title {
+            height: 5vw;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.25vw;
+            letter-spacing: 0.035em;
+            color: #444444;
+            font-weight: 1000;
+            text-transform: uppercase;
+        }
+
+        #home>#result-root>div#result-container>div#result-content {
+            height: 20vw;
+            width: 100%;
+            margin: 0.5vw 0;
+
+        }
+
+        #home>#result-root>div#result-container>div#result-content>#imagePreview {
+            height: 100%;
+            width: 100%;
+            border: 0;
+
+            outline: none;
+        }
+    </style>
+    <title>Fake Currency Detection using Transfer Learning</title>
+</head>
+
+<body>
+    <div id="home">
+        <div id="top-bar">
+            <div id="page-title">
+                <span class="text">Fake Currency Detection using Transfer Learning</span>
+            </div>
+            </a>
+        </div>
+        <div id="result-root">
+            <div id="result-container">
+
+                <div id="result-content">
+                    <img id="imagePreview" src="data:image/png;base64,{{ image_base64 }}" />
+                </div>
+                <div id="result-title">Detected : {{ result }} </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
